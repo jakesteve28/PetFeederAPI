@@ -37,6 +37,7 @@ __decorate([
 ], AppController.prototype, "getHello", null);
 __decorate([
     common_1.Post(":speed"),
+    common_1.Header('Access-Control-Allow-Origin', '*'),
     __param(0, common_1.Param('speed')), __param(1, common_1.Headers('token')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String, String]),

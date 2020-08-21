@@ -8,9 +8,12 @@ GPIO.setup(servoPIN, GPIO.OUT)
 argspeed = sys.argv[0]
 
 p = GPIO.PWM(servoPIN, 50) # GPIO 17 for PWM with 50Hz
-p.start(5.0) # Initialization
+p.start(10.0) # Initialization
+print("Servo Initialized")
 try:
-  time.sleep(2.0)
+  print("Servo Started")
+  time.sleep(5.0)
+  print("Servo Stopped")
 except KeyboardInterrupt:
   p.stop()
   GPIO.cleanup()

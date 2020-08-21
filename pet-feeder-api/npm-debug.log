@@ -1,0 +1,258 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', '-g', 'node' ]
+2 info using npm@1.4.21
+3 info using node@v8.11.1
+4 verbose cache add [ 'node', null ]
+5 verbose cache add name=undefined spec="node" args=["node",null]
+6 verbose parsed url Url {
+6 verbose parsed url   protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'node',
+6 verbose parsed url   path: 'node',
+6 verbose parsed url   href: 'node' }
+7 silly lockFile f8e966d1-node node
+8 verbose lock node /root/.npm/f8e966d1-node.lock
+9 silly lockFile f8e966d1-node node
+10 silly lockFile f8e966d1-node node
+11 verbose addNamed [ 'node', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile bccd7aa1-node node@
+14 verbose lock node@ /root/.npm/bccd7aa1-node.lock
+15 silly addNameRange { name: 'node', range: '*', hasData: false }
+16 verbose request where is /node
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 37f9ec296fbc71a3
+19 verbose url raw /node
+20 verbose url resolving [ 'https://registry.npmjs.org/', './node' ]
+21 verbose url resolved https://registry.npmjs.org/node
+22 verbose request where is https://registry.npmjs.org/node
+23 info trying registry request attempt 1 at 2:21:21 PM
+24 http GET https://registry.npmjs.org/node
+25 http 200 https://registry.npmjs.org/node
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Sun, 16 Aug 2020 21:21:22 GMT',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'transfer-encoding': 'chunked',
+26 silly registry.get     connection: 'close',
+26 silly registry.get     'set-cookie':
+26 silly registry.get      [ '__cfduid=d335d1100964d7b27a3f520c6eeb0caae1597612881; expires=Tue, 15-Sep-20 21:21:21 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+26 silly registry.get     'cf-ray': '5c3e34604916fdb9-PDX',
+26 silly registry.get     'cache-control': 'public, max-age=300',
+26 silly registry.get     etag: 'W/"0322ac6de39df0bfa5678d26e71ba1d8"',
+26 silly registry.get     'last-modified': 'Thu, 13 Aug 2020 02:10:06 GMT',
+26 silly registry.get     vary: 'accept-encoding, accept',
+26 silly registry.get     'cf-cache-status': 'REVALIDATED',
+26 silly registry.get     'cf-request-id': '049abf102b0000fdb97d83c200000001',
+26 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+26 silly registry.get     server: 'cloudflare',
+26 silly registry.get     'content-encoding': 'gzip' } ]
+27 silly addNameRange number 2 { name: 'node', range: '*', hasData: true }
+28 silly addNameRange versions [ 'node',
+28 silly addNameRange   [ '0.0.0',
+28 silly addNameRange     '0.1.14',
+28 silly addNameRange     '0.1.15',
+28 silly addNameRange     '0.1.16',
+28 silly addNameRange     '0.1.17',
+28 silly addNameRange     '0.1.18',
+28 silly addNameRange     '0.1.19',
+28 silly addNameRange     '0.1.20',
+28 silly addNameRange     '0.1.21',
+28 silly addNameRange     '0.1.22',
+28 silly addNameRange     '0.1.23',
+28 silly addNameRange     '0.1.24',
+28 silly addNameRange     '0.1.25',
+28 silly addNameRange     '0.1.26',
+28 silly addNameRange     '0.1.27',
+28 silly addNameRange     '0.1.28',
+28 silly addNameRange     '0.1.29',
+28 silly addNameRange     '0.1.30',
+28 silly addNameRange     '0.1.31',
+28 silly addNameRange     '0.1.32',
+28 silly addNameRange     '0.1.33',
+28 silly addNameRange     '0.1.90',
+28 silly addNameRange     '0.1.91',
+28 silly addNameRange     '0.1.92',
+28 silly addNameRange     '0.1.93',
+28 silly addNameRange     '0.1.94',
+28 silly addNameRange     '0.1.95',
+28 silly addNameRange     '0.1.96',
+28 silly addNameRange     '0.1.97',
+28 silly addNameRange     '0.1.98',
+28 silly addNameRange     '0.1.99',
+28 silly addNameRange     '0.1.100',
+28 silly addNameRange     '0.1.101',
+28 silly addNameRange     '0.1.102',
+28 silly addNameRange     '0.1.103',
+28 silly addNameRange     '0.1.104',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.2.5',
+28 silly addNameRange     '0.2.6',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.3.2',
+28 silly addNameRange     '0.3.3',
+28 silly addNameRange     '0.3.4',
+28 silly addNameRange     '0.3.5',
+28 silly addNameRange     '0.3.6',
+28 silly addNameRange     '0.3.7',
+28 silly addNameRange     '0.3.8',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.4.1',
+28 silly addNameRange     '0.4.2',
+28 silly addNameRange     '0.4.3',
+28 silly addNameRange     '0.4.4',
+28 silly addNameRange     '0.4.5',
+28 silly addNameRange     '0.4.6',
+28 silly addNameRange     '0.4.7',
+28 silly addNameRange     '0.4.8',
+28 silly addNameRange     '0.4.9',
+28 silly addNameRange     '0.4.10',
+28 silly addNameRange     '0.4.11',
+28 silly addNameRange     '0.4.12',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.5.1',
+28 silly addNameRange     '0.5.2',
+28 silly addNameRange     '0.5.3',
+28 silly addNameRange     '0.5.4',
+28 silly addNameRange     '0.5.5',
+28 silly addNameRange     '0.5.6',
+28 silly addNameRange     '0.5.7',
+28 silly addNameRange     '0.5.8',
+28 silly addNameRange     '0.5.9',
+28 silly addNameRange     '0.5.10',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.6.1',
+28 silly addNameRange     '0.6.2',
+28 silly addNameRange     '0.6.3',
+28 silly addNameRange     '0.6.4',
+28 silly addNameRange     '0.6.5',
+28 silly addNameRange     '0.6.6',
+28 silly addNameRange     '0.6.7',
+28 silly addNameRange     '0.6.8',
+28 silly addNameRange     '0.6.9',
+28 silly addNameRange     '0.6.10',
+28 silly addNameRange     '0.6.11',
+28 silly addNameRange     '0.6.12',
+28 silly addNameRange     '0.6.13',
+28 silly addNameRange     '0.6.14',
+28 silly addNameRange     '0.6.15',
+28 silly addNameRange     '0.6.16',
+28 silly addNameRange     '0.6.17',
+28 silly addNameRange     '0.6.18',
+28 silly addNameRange     '0.6.19',
+28 silly addNameRange     '0.6.20',
+28 silly addNameRange     '0.6.21',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     ... 410 more items ] ]
+29 verbose addNamed [ 'node', '14.8.0' ]
+30 verbose addNamed [ '14.8.0', '14.8.0' ]
+31 silly lockFile 65ec3423-node-14-8-0 node@14.8.0
+32 verbose lock node@14.8.0 /root/.npm/65ec3423-node-14-8-0.lock
+33 silly lockFile 2cf83baf-y-npmjs-org-node-node-14-8-0-tgz https://registry.npmjs.org/node/-/node-14.8.0.tgz
+34 verbose lock https://registry.npmjs.org/node/-/node-14.8.0.tgz /root/.npm/2cf83baf-y-npmjs-org-node-node-14-8-0-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/node/-/node-14.8.0.tgz',
+35 verbose addRemoteTarball   'c9a165d8130c9901793f834113c5bbb10c308778' ]
+36 info retry fetch attempt 1 at 2:21:22 PM
+37 verbose fetch to= /tmp/npm-16348-5WnpzbGh/registry.npmjs.org/node/-/node-14.8.0.tgz
+38 http GET https://registry.npmjs.org/node/-/node-14.8.0.tgz
+39 http 200 https://registry.npmjs.org/node/-/node-14.8.0.tgz
+40 silly lockFile 2cf83baf-y-npmjs-org-node-node-14-8-0-tgz https://registry.npmjs.org/node/-/node-14.8.0.tgz
+41 silly lockFile 2cf83baf-y-npmjs-org-node-node-14-8-0-tgz https://registry.npmjs.org/node/-/node-14.8.0.tgz
+42 silly lockFile 65ec3423-node-14-8-0 node@14.8.0
+43 silly lockFile 65ec3423-node-14-8-0 node@14.8.0
+44 silly lockFile bccd7aa1-node node@
+45 silly lockFile bccd7aa1-node node@
+46 silly resolved [ { name: 'node',
+46 silly resolved     version: '14.8.0',
+46 silly resolved     description: 'node',
+46 silly resolved     main: 'index.js',
+46 silly resolved     keywords: [ 'runtime' ],
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git+https://github.com/aredridel/node-bin-gen.git' },
+46 silly resolved     scripts: { preinstall: 'node installArchSpecificPackage' },
+46 silly resolved     bin: { node: 'bin/node' },
+46 silly resolved     dependencies: { 'node-bin-setup': '^1.0.0' },
+46 silly resolved     license: 'ISC',
+46 silly resolved     author: '',
+46 silly resolved     engines: { npm: '>=5.0.0' },
+46 silly resolved     bugs: { url: 'https://github.com/aredridel/node-bin-gen/issues' },
+46 silly resolved     homepage: 'https://github.com/aredridel/node-bin-gen#readme',
+46 silly resolved     _id: 'node@14.8.0',
+46 silly resolved     _nodeVersion: '14.3.0',
+46 silly resolved     _npmVersion: '6.14.7',
+46 silly resolved     dist:
+46 silly resolved      { integrity: 'sha512-F3hndEpkL32EaxbNawsUdMjQfPGAWvIlK8lMdQykI4Rp3dw/p9X1e0OFa0Tyvz1+hGefgT6lQWJ8wj1g/YvO9g==',
+46 silly resolved        shasum: 'c9a165d8130c9901793f834113c5bbb10c308778',
+46 silly resolved        tarball: 'https://registry.npmjs.org/node/-/node-14.8.0.tgz',
+46 silly resolved        fileCount: 3,
+46 silly resolved        unpackedSize: 1483,
+46 silly resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfNKD5CRA9TVsSAnZWagAAjC0P/j3dtd/HS0TAXTUxcZDr\n7a0pu2t69TO1Lt0sbyO1nb0GB3iTUN66V9ah1Nhzy69qSFPZ/I4dguLJ1qb4\nevPFhV+kZRHber5qjFEr2c5AAZl7F0wLzQtCACSYEPx2LKVSg1GfJp26S966\n69astS8UM8FX+NUPoxXv/UoYROHJXFBPRFHeDoXpA5ErDWDus07uC9GhoL/Q\nxbBaT14C7l/vEUQHpDO2b3JtQaD6MJPkjmacve8LzWmcqU+1jGHiK4L0ukB7\nyUGknPJBhUIyXiXwWp+XJUIdUcErxSTLvmZRQQF6C0o+ahMg/22/I5nS/9oT\niwKtpi0pW6bB83sI9n7EAeDJod7hf7SQNt1B28JInaZbTzheYmuRw+LuzezP\nWIb65mvWL6VFOkmSovXP/0nZ9jTHllxNokpL6xfQQXXI9tKuWAjFR3kwLctT\nATaxGMC3YDhhqcrmjHuThtLirj8Ui2voU0xXKVKMy4r1Und00zn9DOCKPKLZ\nQ2VZgGRO7sTb3sUGlYp2/1KdGcBv1rhoe7Vh7RFzLY0wY3zCosBrR3/uMfnz\nulOj7hCf1+xO5smceS9dqtp4Lz3BaXHBRcvL5leW/+rw7ErJHpR8009RC5u/\nKIRVcAHo6O0q8bO9Hd2CdiR0eiLlREfVhOce+rel/IeYTK0n8jo4VYoHbamt\nnL4n\r\n=ryXj\r\n-----END PGP SIGNATURE-----\r\n' },
+46 silly resolved     maintainers: [ [Object], [Object] ],
+46 silly resolved     _npmUser: { name: 'aredridel', email: 'aredridel@dinhe.net' },
+46 silly resolved     directories: {},
+46 silly resolved     _npmOperationalInternal:
+46 silly resolved      { host: 's3://npm-registry-packages',
+46 silly resolved        tmp: 'tmp/node_14.8.0_1597284601055_0.14205242402596618' },
+46 silly resolved     _hasShrinkwrap: false,
+46 silly resolved     _shasum: 'c9a165d8130c9901793f834113c5bbb10c308778',
+46 silly resolved     _from: 'node@',
+46 silly resolved     _resolved: 'https://registry.npmjs.org/node/-/node-14.8.0.tgz' } ]
+47 info install node@14.8.0 into /usr/local/lib
+48 info installOne node@14.8.0
+49 warn engine node@14.8.0: wanted: {"npm":">=5.0.0"} (current: {"node":"8.11.1","npm":"1.4.21"})
+50 verbose lib/node_modules/node unbuild
+51 verbose tar unpack /root/.npm/node/14.8.0/package.tgz
+52 silly lockFile 8630672c--usr-local-lib-node-modules-node tar:///usr/local/lib/node_modules/node
+53 verbose lock tar:///usr/local/lib/node_modules/node /root/.npm/8630672c--usr-local-lib-node-modules-node.lock
+54 silly lockFile 233fd062-root-npm-node-14-8-0-package-tgz tar:///root/.npm/node/14.8.0/package.tgz
+55 verbose lock tar:///root/.npm/node/14.8.0/package.tgz /root/.npm/233fd062-root-npm-node-14-8-0-package-tgz.lock
+56 silly gunzTarPerm modes [ '755', '644' ]
+57 silly gunzTarPerm extractEntry installArchSpecificPackage.js
+58 silly gunzTarPerm extractEntry package.json
+59 silly gunzTarPerm extractEntry README.md
+60 silly lockFile 8630672c--usr-local-lib-node-modules-node tar:///usr/local/lib/node_modules/node
+61 silly lockFile 8630672c--usr-local-lib-node-modules-node tar:///usr/local/lib/node_modules/node
+62 silly lockFile 233fd062-root-npm-node-14-8-0-package-tgz tar:///root/.npm/node/14.8.0/package.tgz
+63 silly lockFile 233fd062-root-npm-node-14-8-0-package-tgz tar:///root/.npm/node/14.8.0/package.tgz
+64 info preinstall node@14.8.0
+65 verbose unsafe-perm in lifecycle false
+66 info node@14.8.0 Failed to exec preinstall script
+67 verbose lib/node_modules/node unbuild
+68 warn This failure might be due to the use of legacy binary "node"
+69 warn For further explanations, please read
+/usr/share/doc/nodejs/README.Debian
+70 info preuninstall node@14.8.0
+71 info uninstall node@14.8.0
+72 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild node@14.8.0
+73 verbose /usr/local/bin,[object Object] binRoot
+74 info postuninstall node@14.8.0
+75 error node@14.8.0 preinstall: `node installArchSpecificPackage`
+75 error Exit status 1
+76 error Failed at the node@14.8.0 preinstall script.
+76 error This is most likely a problem with the node package,
+76 error not with npm itself.
+76 error Tell the author that this fails on your system:
+76 error     node installArchSpecificPackage
+76 error You can get their info via:
+76 error     npm owner ls node
+76 error There is likely additional logging output above.
+77 error System Linux 4.19.66-v7+
+78 error command "/usr/bin/node" "/usr/bin/npm" "i" "-g" "node"
+79 error cwd /home/pi/feeder/PetFeederAPI/pet-feeder-api
+80 error node -v v8.11.1
+81 error npm -v 1.4.21
+82 error code ELIFECYCLE
+83 verbose exit [ 1, true ]

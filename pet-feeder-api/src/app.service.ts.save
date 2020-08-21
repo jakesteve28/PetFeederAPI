@@ -6,7 +6,7 @@ export class AppService {
   getHello(): string {
     return 'Hello World!';
   }
-  async postStart(token: string, speed: string): Promise<T>  {
+  async postStart(token: string, speed: string): Promise<any>  {
     let speedNum = -1
     if(token && speed) {
       speedNum = parseInt(speed)

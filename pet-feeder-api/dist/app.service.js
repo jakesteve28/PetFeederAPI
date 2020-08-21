@@ -13,7 +13,7 @@ let AppService = class AppService {
     getHello() {
         return 'Hello World!';
     }
-    postStart(token, speed) {
+    async postStart(token, speed) {
         let speedNum = -1;
         if (token && speed) {
             speedNum = parseInt(speed);
@@ -33,12 +33,13 @@ let AppService = class AppService {
         console.log(speedNum);
         var options = {
             mode: "text",
-            pythonPath: 'C:/Python/Python38/python.exe',
+            pythonPath: '/usr/bin/python',
             pythonOptions: ['-u'],
             scriptPath: './scripts',
             args: [`${speedNum}`]
         };
-        python_shell_1.PythonShell.run('servo-script.py', options, (err, results) => {
+        let res = [];
+        await python_shell_1.PythonShell.run('servo-script.py', options, async (err, results) => {
             if (err) {
                 console.log(err, results);
                 throw new common_1.HttpException({
@@ -47,8 +48,9 @@ let AppService = class AppService {
                 }, common_1.HttpStatus.BAD_REQUEST);
             }
             console.log('results: %j', results);
+            res = results;
         });
-        return 'Pet Feeder Servo Started at speed :' + speed;
+        return 'Pet Feeder Servo Started at speed :' + speed + " with script results: " + res;
     }
     postStop(token) {
         return 'Pet Feeder Servo Stopped';
