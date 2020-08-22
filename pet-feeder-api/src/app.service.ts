@@ -6,7 +6,7 @@ export class AppService {
   getHello(): string {
     return 'Hello World!';
   }
-  async postStart(token: string, speed: string): Promise<T>  {
+  postStart(token: string, speed: string): string  {
     let speedNum = -1
     if(token && speed) {
       speedNum = parseInt(speed)
@@ -31,18 +31,13 @@ export class AppService {
         args: [`${speedNum}`]
     }; 
     let res: any[] = [];
-    await PythonShell.run('servo-script.py', options, async (err, results) => {
-      if(err) {
-        console.log(err, results)
-          throw new HttpException({
-            status: HttpStatus.BAD_REQUEST,
-            error: 'Python shell execution error',
-          }, HttpStatus.BAD_REQUEST);
-      }
-      console.log('results: %j', results);
-      res = results
+    let index = 0;
+    let pyshell = new PythonShell('servo-script.py', options);
+    pyshell.on('message', (message) => {
+	res[index] = message 
+    	index++
     })
-    return 'Pet Feeder Servo Started at speed :' + speed + " with script results: " + res ;
+    return "Pet Feeder Servo Started at Speed: " + speed + " and with script results: " + res;
   }
   postStop(token: string) : string {
     return 'Pet Feeder Servo Stopped';
