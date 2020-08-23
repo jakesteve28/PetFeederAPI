@@ -1,0 +1,18 @@
+distinguished_name = req_distinguished_name
+x509_extensions = v3_req
+prompt = no
+[req_distinguished_name]
+C = US
+ST = WA 
+L = Vancouver
+O = Jacob
+OU = Stevens 
+CN = www.jakestevefeeder.ddns.net
+[v3_req]
+keyUsage = critical, digitalSignature, keyAgreement
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = jakkestevefeeder.ddns.net
+DNS.2 = www.jakestevefeeder.ddns.net
+DNS.3 = jakestevefeeder

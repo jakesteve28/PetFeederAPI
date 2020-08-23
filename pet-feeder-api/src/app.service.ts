@@ -32,11 +32,15 @@ export class AppService {
     }; 
     let res: any[] = [];
     let index = 0;
-    let pyshell = new PythonShell('servo-script.py', options);
+    PythonShell.run('servo-script.py', options, function(error, results){
+	console.log(results)
+    })
+   /* let pyshell = new PythonShell('servo-script.py', options);
     pyshell.on('message', (message) => {
 	res[index] = message 
     	index++
-    })
+	console.log(message)
+    })*/
     return "Pet Feeder Servo Started at Speed: " + speed + " and with script results: " + res;
   }
   postStop(token: string) : string {

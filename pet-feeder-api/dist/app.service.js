@@ -40,10 +40,8 @@ let AppService = class AppService {
         };
         let res = [];
         let index = 0;
-        let pyshell = new python_shell_1.PythonShell('servo-script.py', options);
-        pyshell.on('message', (message) => {
-            res[index] = message;
-            index++;
+        python_shell_1.PythonShell.run('servo-script.py', options, function (error, results) {
+            console.log(results);
         });
         return "Pet Feeder Servo Started at Speed: " + speed + " and with script results: " + res;
     }

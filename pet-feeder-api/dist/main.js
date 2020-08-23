@@ -4,11 +4,12 @@ const core_1 = require("@nestjs/core");
 const app_module_1 = require("./app.module");
 const fs = require("fs");
 const httpsOptions = {
-    key: fs.readFileSync('./security/key.pem'),
+    key: fs.readFileSync('./security/cert.key'),
     cert: fs.readFileSync('./security/cert.pem')
 };
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule, { httpsOptions });
+    app.enableCors();
     await app.listen(3000);
 }
 bootstrap();
