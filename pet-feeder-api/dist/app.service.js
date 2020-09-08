@@ -41,6 +41,9 @@ let AppService = class AppService {
         let res = [];
         let index = 0;
         python_shell_1.PythonShell.run('servo-script.py', options, function (error, results) {
+            if (error) {
+                console.log(error);
+            }
             console.log(results);
         });
         return "Pet Feeder Servo Started at Speed: " + speed + " and with script results: " + res;

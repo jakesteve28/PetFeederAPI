@@ -33,6 +33,9 @@ export class AppService {
     let res: any[] = [];
     let index = 0;
     PythonShell.run('servo-script.py', options, function(error, results){
+	if(error){
+		console.log(error)
+	}
 	console.log(results)
     })
    /* let pyshell = new PythonShell('servo-script.py', options);
